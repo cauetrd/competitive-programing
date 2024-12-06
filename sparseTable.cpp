@@ -7,8 +7,7 @@ using namespace std;
 
 // Complexity: The pre proccessing is O(nlog(n)). Most queries such as sum are O(log(n));
 // So in that case, it is pretty much always better to use a segTree.
-// However, when the queries are min max or gcd, the complexity of each query becomes O(1), 
-// Since instead of selecting the perfectly fit interval, we just overlap two semi-intervals; 
+// However, when the queries are min or max, the complexity of each query becomes O(1); 
 
 class SparseTable
 {

@@ -19,7 +19,7 @@ public:
     SegTree(vector<ll> arr, int size): st(4*size,0), v(size+1,0) {
         this->size = size;
 
-        for(int i = 1; i<size+1; i++){ // arr indexed in 1;
+        for(int i = 1; i<size+1; i++){
             v[i] = arr[i];
         }
     }

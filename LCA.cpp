@@ -14,17 +14,14 @@ vi depth(MAX_N);
 
 //definir up[a]=a antes;
 //construtor se passarmos o a como raiz;
-
-//preciso dar uma refinada ainda, mas dai da pra tirar o suficiente pra resolver mt coisa
-
-void dsu(int a){
+void dfs(int a){
     for(int b: children[a]){
         up[b][0] =a;
         depth[b] =depth[a] +1;
         for(int j =1; j<LOG; j++){
             up[b][j]= up[ up[b][j-1] ][j-1];
         }
-        dsu(b);
+        dfs(b);
     }
 }
 
