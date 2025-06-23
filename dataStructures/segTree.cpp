@@ -7,6 +7,7 @@ using namespace std;
 #define pii pair<int,int>
 
 
+//passar vetor indexado em 1
 
 class SegTree {
     vector<ll> st;
